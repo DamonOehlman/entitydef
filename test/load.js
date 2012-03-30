@@ -8,7 +8,9 @@ describe('loader tests', function() {
         var items = [];
         
         loader(path.resolve(__dirname, 'data/npc'))
-            .on('item', function(item) {
+            .on('item', function(itemPath, Class, initialState) {
+                var item = new Class(initialState);
+                
                 items.push(item);
                 
                 expect(item.phrases).to.be.ok();
@@ -23,8 +25,9 @@ describe('loader tests', function() {
         var items = [];
         
         loader(path.resolve(__dirname, 'data/npc'), NPC)
-            .on('item', function(item) {
-                console.log(item);
+            .on('item', function(itemPath, Class, initialState) {
+                var item = new Class(initialState);
+                
                 items.push(item);
                 
                 expect(item.phrases).to.be.ok();
