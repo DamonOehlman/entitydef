@@ -1,0 +1,11 @@
+{
+    "drops": {
+        "flask": 40,
+        "burger": 10,
+        "firepotion": 5
+    },
+    
+    "hp": 25,
+    "armor": 1,
+    "weapon": 1
+}
