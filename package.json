@@ -1,5 +1,5 @@
 {
-  "name": "defloader",
+  "name": "definator",
   "description": "Simple JSON Definition Loader using findit",
   "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
   "tags": [ "loader", "definition" ],
