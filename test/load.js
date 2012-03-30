@@ -1,5 +1,5 @@
 var path = require('path'),
-    loader = require('../lib/defloader'),
+    loader = require('../lib/loader'),
     expect = require('expect.js'),
     NPC = require('./types/npc');
 
@@ -29,7 +29,8 @@ describe('loader tests', function() {
                 var item = new Class(initialState);
                 
                 items.push(item);
-                
+
+                expect(itemPath).to.equal('guard');            
                 expect(item.phrases).to.be.ok();
                 expect(item.say()).to.be.ok();
             })
