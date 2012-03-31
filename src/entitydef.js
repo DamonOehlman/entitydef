@@ -1,6 +1,6 @@
 // req: underscore
 
-function definator(data, templateClass) {
+function entitydef(data, templateClass) {
     // initialise the temp constructor
     var tmpConstructor = function(opts) {
         opts = opts || {};
