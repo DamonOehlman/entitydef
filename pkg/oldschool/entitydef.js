@@ -1,4 +1,6 @@
-define('definator', ['underscore'], function(underscore) {
+// dep: underscore
+
+(function (glob) {
   
   function definator(data, templateClass) {
       // initialise the temp constructor
@@ -25,6 +27,7 @@ define('definator', ['underscore'], function(underscore) {
       // return the new constructor
       return tmpConstructor;
   }
-
-  return definator;
-});
+  
+  glob.entitydef = entitydef;
+  
+})(this);

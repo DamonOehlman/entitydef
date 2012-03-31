@@ -1,5 +1,5 @@
 {
-  "name": "definator",
+  "name": "entitydef",
   "description": "Simple JSON Definition Loader using findit",
   "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
   "tags": [ "loader", "definition" ],
@@ -24,11 +24,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/DamonOehlman/defloader.git"
+    "url": "git://github.com/DamonOehlman/entitydef.git"
   },
   
   "bugs": {
-    "url": "http://github.com/DamonOehlman/defloader/issues"
+    "url": "http://github.com/DamonOehlman/entitydef/issues"
   },
   
   "scripts": { "test": "mocha --reporter spec" },

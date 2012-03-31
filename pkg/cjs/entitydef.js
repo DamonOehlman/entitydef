@@ -27,4 +27,4 @@ function definator(data, templateClass) {
     return tmpConstructor;
 }
 
-module.exports = definator;
+module.exports = entitydef;
