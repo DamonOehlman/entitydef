@@ -1,2 +1,2 @@
-exports = module.exports = require('./pkg/cjs/definator');
+exports = module.exports = require('./dist/commonjs/entitydef');
 exports.load = require('./lib/loader');

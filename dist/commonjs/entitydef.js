@@ -1,6 +1,8 @@
-// req: underscore
 
-function definator(data, templateClass) {
+var underscore = require('underscore');
+
+
+function entitydef(data, templateClass) {
     // initialise the temp constructor
     var tmpConstructor = function(opts) {
         opts = opts || {};
@@ -24,4 +26,8 @@ function definator(data, templateClass) {
     
     // return the new constructor
     return tmpConstructor;
+}
+
+if (typeof entitydef != 'undefined') {
+    module.exports = entitydef;
 }
