@@ -1,6 +1,26 @@
+/* ~entitydef~
+ * 
+ * Simple JSON Definition Loader using findit
+ * 
+ * -meta---
+ * version:    0.0.2
+ * builddate:  2012-10-30T03:29:48.256Z
+ * generator:  interleave@0.5.23
+ * 
+ * 
+ * 
+ */ 
 
-// req: underscore
-(function(glob) {
+// umdjs returnExports pattern: https://github.com/umdjs/umd/blob/master/returnExports.js
+(function (root, factory) {
+    if (typeof exports === 'object') {
+        module.exports = factory(require('underscore'));
+    } else if (typeof define === 'function' && define.amd) {
+        define(['underscore'], factory);
+    } else {
+        root['entitydef'] = factory(root['underscore']);
+    }
+}(this, function (underscore) {
     
     function entitydef(data, templateClass) {
         // initialise the temp constructor
@@ -28,7 +48,5 @@
         return tmpConstructor;
     }
     
-    if (typeof entitydef != 'undefined') {
-        glob.entitydef = entitydef;
-    }
-}(this));
+    return typeof entitydef != 'undefined' ? entitydef : undefined;
+}));
