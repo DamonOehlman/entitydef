@@ -7,15 +7,11 @@
     "definition"
   ],
   "version": "0.0.2",
-  "main": "./index",
-  "engines": {
-    "node": ">= 0.6.x < 0.9.0"
-  },
   "dependencies": {
-    "async": "0.1.x",
+    "async": "~0.2.9",
     "debug": "*",
-    "findit": "0.1.x",
-    "underscore": "1.3.x"
+    "findit": "~1.1.0",
+    "underscore": "~1.5.2"
   },
   "devDependencies": {
     "expect.js": "0.1.x",
@@ -23,13 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/DamonOehlman/entitydef.git"
+    "url": "https://bitbucket.org/DamonOehlman/entitydef.git"
   },
   "bugs": {
-    "url": "http://github.com/DamonOehlman/entitydef/issues"
+    "url": "https://bitbucket.org/DamonOehlman/entitydef/issues"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
-  },
-  "contributors": []
+    "test": "$(npm bin)/mocha --reporter spec"
+  }
 }
