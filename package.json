@@ -26,6 +26,7 @@
     "url": "http://github.com/DamonOehlman/entitydef/issues"
   },
   "scripts": {
+    "gendocs": "gendocs > README.md",
     "interleave": "interleave --output ./",
     "pretest": "npm run interleave",
     "test": "mocha --reporter spec"
