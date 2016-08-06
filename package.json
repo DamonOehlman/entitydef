@@ -30,5 +30,11 @@
     "pretest": "npm run interleave",
     "test": "mocha --reporter spec"
   },
-  "contributors": []
+  "contributors": [],
+  "homepage": "https://github.com/DamonOehlman/entitydef#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
 }
