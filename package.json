@@ -1,16 +1,12 @@
 {
   "name": "entitydef",
   "description": "Simple JSON Definition Loader using findit",
-  "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
   "tags": [
     "loader",
     "definition"
   ],
   "version": "0.0.2",
-  "main": "./index",
-  "engines": {
-    "node": ">= 0.6.x < 0.9.0"
-  },
   "dependencies": {
     "async": "0.1.x",
     "debug": "*",
@@ -19,6 +15,7 @@
   },
   "devDependencies": {
     "expect.js": "0.1.x",
+    "interleave": "^0.6.1",
     "mocha": "1.2.x"
   },
   "repository": {
@@ -29,6 +26,8 @@
     "url": "http://github.com/DamonOehlman/entitydef/issues"
   },
   "scripts": {
+    "interleave": "interleave --output ./",
+    "pretest": "npm run interleave",
     "test": "mocha --reporter spec"
   },
   "contributors": []
