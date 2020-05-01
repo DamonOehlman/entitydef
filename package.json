@@ -11,7 +11,8 @@
     "async": "^2.0.1",
     "debug": "^2.2.0",
     "findit": "^2.0.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
@@ -29,7 +30,9 @@
     "gendocs": "gendocs > README.md",
     "interleave": "interleave --output ./",
     "pretest": "npm run interleave",
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "contributors": [],
   "homepage": "https://github.com/DamonOehlman/entitydef#readme",
@@ -37,5 +40,6 @@
   "directories": {
     "test": "test"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
